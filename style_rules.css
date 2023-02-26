@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Bamum';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    position: absolute;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 30px;
+    flex-grow: 1;
+    margin-right: 100px;
+    position: absolute;
+    left: 20px;
+    bottom: -13px;
+}
+.header h1 {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    bottom: 100;
+
+}
+/* Animated buttons */
+.animated-button {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 25   px;
+    z-index: 2;
+}
+
+
+.active {
+    background-color: #cbfbff;
+    color: #FFF;
+    border: 2px solid #c1f3ff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* add smooth transition */
+}
+
+.active:hover {
+    background-color: #FFF;
+    /* change background color on hover */
+    color: #79c3ff;
+    /* change text color on hover */
+}
+a {
+    text-decoration: none;
+    font-size: xx-large;
+}
+.nav-menu li {
+    padding: 10px 20px;
+    font-size: 30px;
+}   
+p{
+    font-family: 'Noto Sans Bamum';
+}
+
+nav {
+    background-color: #2e8cff;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-family: 'Mynerve', cursive;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #ffffff;
+}
+
+nav .active {
+    background-color: #95caff;
+    color: #fff;
+}
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video_file{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+}
+h1{
+    font-family: 'Mynerve', cursive;
+    top: auto;
+    color: #FFF;
+}
+.active{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 859px;
+    height: 453px;
+    left: 17%;
+    top: 116px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: #82b0ff;
+    width: 0%;
+    transition: width 0.5s ease-in-out; 
+}
+.start_text{
+    position: absolute;
+    width: 1440px;
+    height: 8000px;
+    left: 480px;
+    top: 280px;
+    font-size: 36;
+}
+.rules {
+    bottom: 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Здесь задается прозрачный фон с помощью rgba. Последнее значение (0.5) указывает на прозрачность в половину. */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Тень для элемента */
+}
+
+.rules h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.rules ol {
+    margin: 0;
+    padding: 20px 0 0 50px;
+    list-style-type: decimal;
+}
+
+.rules li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Noto Sans Bamum', sans-serif;
+}
+
+.h1_v {
+    overflow: hidden;
+    /* Скрываем все, что выходит за границы блока */
+    border-right: 0.1em solid rgb(#2e8cff);
+    /* Добавляем мигающий курсор */
+    white-space: nowrap;
+    /* Запрещаем перенос строк */
+    letter-spacing: 0.1em;
+    /* Задаем расстояние между буквами */
+    animation: typing 6s steps(60, end);
+    /* Запускаем анимацию печатания */
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}

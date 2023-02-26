@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Valerun INFINIUM</title>
+    <link rel="stylesheet" href="style_rules.css">
+    <link rel="icon" type="image/png" href="images/—Pngtree—letter v and wing logo_5824406.png">
+</head>
+<body>
+    <div id="progress-bar">
+        <div id="progress-bar-fill"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <nav class="nav-menu">
+                <ul>
+                    <h1 class="h1_v">Valerun INFINIUM</h1>
+                    <li><a href="index_home.html" class="active">Головна</a></li>
+                    <li><a href="index_map.html" class="active">Карта</a></li>
+                    <li><a href="index_rules.html" class="active">Правила серверу</a></li>
+                    <li><a href="https://valerun-infinium.fandom.com/ru/wiki/%D0%92%D1%96%D0%BA%D1%96_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%83%D0%BD:_%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F" class="active">Форум</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="rules">
+        <h2>Правила сайта</h2>
+        <ol>
+            <li>Крадіжка заборонена. Не викрадайте речі або блоки інших гравців, якщо це не дозволено серверними правилами.</li>
+            <li>Лайка і погрози заборонені. Не ображайте та не загрожуйте іншим гравцям у ігровому чаті чи голосовому спілкуванні.</li>
+            <li>Поважайте майно інших гравців. Не ламайте чи не знищуйте майно інших гравців, якщо це не дозволено серверними правилами.</li>
+            <li>Використання читів заборонено. Не використовуйте чити чи зломи, які дають вам перевагу в грі, порушують правила сервера
+            або можуть зашкодити іншим гравцям.</li>
+            <li>Дотримуйтесь правил економіки. Якщо на сервері є ігрова економіка, дотримуйтесь правил її використання та не
+            шахрайствуйте з іншими гравцями.</li>
+            <li>Дотримуйтесь правил використання ферм. Якщо ви створюєте ферми, не забувайте дотримуватись правил використання ресурсів
+            і не створюйте ферми, які викликають лаги на сервері.</li>
+        </ol>
+    </div>
+
+
+    
+    <script>
+        const h1 = document.querySelector('.h1_v');
+            h1.addEventListener('click', () => {
+                const text = h1.innerText;
+                navigator.clipboard.writeText("95.216.30.80:25989");
+                alert('Айпі скропійовано!');
+            });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+                var progressBar = document.getElementById('progress-bar-fill');
+                var body = document.querySelector('body');
+                var html = document.querySelector('html');
+                var totalHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+                var progress = 0;
+                var interval = setInterval(function () {
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                    } else {
+                        progress += Math.ceil(Math.random() * 3);
+                        progressBar.style.width = progress + '%';
+                    }
+                }, 50);
+            });
+    </script>
+    <div class="intro">
+        <div class="video">
+            <video class="video_file" src="your-video-file.mp4" autoplay muted loop type="video/mp4"></video>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            const typewriterText = document.querySelector('.typewriter-text');
+            typewriterText.style.display = 'inline-block';
+        }, 100);
+    </script>   
+</body>
+
+</html>
